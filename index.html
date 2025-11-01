@@ -10,7 +10,7 @@
         :root {
             --midnight-blue: #0A192F;
             --electric-purple: #8A2BE2;
-            --blue-cyan: #00CED1; /* Changed from neon-green */
+            --blue-cyan: #00CED1; 
             --text-light: #E0E0E0;
             --text-dark: #A0A0A0;
             --card-bg: #1A2A40;
@@ -22,7 +22,7 @@
             padding: 0;
             background-color: var(--midnight-blue);
             color: var(--text-light);
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden; 
         }
 
         .container {
@@ -31,16 +31,15 @@
             padding: 0 20px;
         }
 
-        /* Header */
         header {
-            background-color: rgba(10, 25, 47, 0.8); /* Semi-transparent */
+            background-color: rgba(10, 25, 47, 0.8);
             padding: 20px 0;
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
             z-index: 1000;
-            backdrop-filter: blur(10px); /* Frosted glass effect */
+            backdrop-filter: blur(10px); 
         }
 
         .header-content {
@@ -53,7 +52,7 @@
             font-family: 'Orbitron', sans-serif;
             font-size: 28px;
             font-weight: 700;
-            color: var(--blue-cyan); /* Changed color */
+            color: var(--blue-cyan); 
             text-decoration: none;
             position: relative;
         }
@@ -65,7 +64,7 @@
             left: -5px;
             right: -5px;
             bottom: -5px;
-            border: 2px solid var(--blue-cyan); /* Changed color */
+            border: 2px solid var(--blue-cyan); 
             border-radius: 50%;
             opacity: 0;
             animation: pulse-logo 2s infinite ease-in-out;
@@ -104,7 +103,7 @@
             bottom: -5px;
             width: 0;
             height: 2px;
-            background: linear-gradient(90deg, var(--blue-cyan), var(--electric-purple)); /* Changed color */
+            background: linear-gradient(90deg, var(--blue-cyan), var(--electric-purple)); 
             transition: width 0.3s ease;
         }
 
@@ -113,12 +112,12 @@
         }
 
         nav ul li a:hover {
-            color: var(--blue-cyan); /* Changed color */
+            color: var(--blue-cyan); 
             transform: translateY(-2px);
         }
 
         .cta-button {
-            background: linear-gradient(45deg, var(--electric-purple), var(--blue-cyan)); /* Changed color */
+            background: linear-gradient(45deg, var(--electric-purple), var(--blue-cyan)); 
             color: white;
             padding: 12px 25px;
             border-radius: 5px;
@@ -134,7 +133,7 @@
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 15px rgba(138, 43, 226, 0.4);
-            background: linear-gradient(45deg, var(--blue-cyan), var(--electric-purple)); /* Reverse gradient, changed color */
+            background: linear-gradient(45deg, var(--blue-cyan), var(--electric-purple)); 
         }
 
         .cta-button::before {
@@ -167,7 +166,7 @@
             text-align: center;
             position: relative;
             overflow: hidden;
-            background-image: url('https://via.placeholder.com/1920x1080/0A192F/E0E0E0?text=Abstract+Game+Scene'); /* Placeholder image */
+            background-image: url('https://via.placeholder.com/1920x1080/0A192F/E0E0E0?text=Abstract+Game+Scene'); 
             background-size: cover;
             background-position: center;
         }
@@ -178,7 +177,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            background: rgba(0, 0, 0, 0.5); 
             z-index: 1;
         }
 
@@ -195,16 +194,16 @@
             font-weight: 700;
             margin-bottom: 20px;
             line-height: 1.2;
-            animation: glitch 3s infinite alternate; /* Glitch effect */
+            animation: glitch 3s infinite alternate;
         }
 
         @keyframes glitch {
-            0% { text-shadow: 0 0 var(--blue-cyan); transform: translateX(0); } /* Changed color */
-            20% { text-shadow: -2px -2px var(--electric-purple), 2px 2px var(--blue-cyan); transform: translateX(2px); } /* Changed color */
-            40% { text-shadow: 2px 2px var(--electric-purple), -2px -2px var(--blue-cyan); transform: translateX(-2px); } /* Changed color */
-            60% { text-shadow: -1px 1px var(--blue-cyan), 1px -1px var(--electric-purple); transform: translateX(1px); } /* Changed color */
-            80% { text-shadow: 1px -1px var(--blue-cyan), -1px 1px var(--electric-purple); transform: translateX(-1px); } /* Changed color */
-            100% { text-shadow: 0 0 var(--blue-cyan); transform: translateX(0); } /* Changed color */
+            0% { text-shadow: 0 0 var(--blue-cyan); transform: translateX(0); } 
+            20% { text-shadow: -2px -2px var(--electric-purple), 2px 2px var(--blue-cyan); transform: translateX(2px); } 
+            40% { text-shadow: 2px 2px var(--electric-purple), -2px -2px var(--blue-cyan); transform: translateX(-2px); } 
+            60% { text-shadow: -1px 1px var(--blue-cyan), 1px -1px var(--electric-purple); transform: translateX(1px); } 
+            80% { text-shadow: 1px -1px var(--blue-cyan), -1px 1px var(--electric-purple); transform: translateX(-1px); } 
+            100% { text-shadow: 0 0 var(--blue-cyan); transform: translateX(0); } 
         }
 
         .hero-subtitle {
@@ -216,7 +215,7 @@
 
         .hero-buttons .cta-button {
             margin: 0 15px;
-            border: 2px solid var(--blue-cyan); /* Changed color */
+            border: 2px solid var(--blue-cyan); 
             background: transparent;
         }
 
@@ -226,15 +225,15 @@
         }
 
         .hero-buttons .cta-button:nth-child(1):hover {
-            background: var(--blue-cyan); /* Changed color */
+            background: var(--blue-cyan); 
             color: var(--midnight-blue);
-            box-shadow: 0 8px 15px rgba(0, 206, 209, 0.4); /* Changed color */
+            box-shadow: 0 8px 15px rgba(0, 206, 209, 0.4); 
         }
 
         .hero-buttons .cta-button:nth-child(2):hover {
-            background: var(--blue-cyan); /* Changed color */
+            background: var(--blue-cyan); 
             color: var(--midnight-blue);
-            box-shadow: 0 8px 15px rgba(0, 206, 209, 0.4); /* Changed color */
+            box-shadow: 0 8px 15px rgba(0, 206, 209, 0.4); 
         }
 
         /* Services Overview */
@@ -248,8 +247,8 @@
             font-family: 'Orbitron', sans-serif;
             font-size: 48px;
             margin-bottom: 60px;
-            color: var(--blue-cyan); /* Changed color */
-            text-shadow: 0 0 10px rgba(0, 206, 209, 0.5); /* Changed color */
+            color: var(--blue-cyan); 
+            text-shadow: 0 0 10px rgba(0, 206, 209, 0.5); 
         }
 
         .services-grid {
@@ -277,7 +276,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, rgba(138, 43, 226, 0.1), rgba(0, 206, 209, 0.1)); /* Changed color */
+            background: linear-gradient(45deg, rgba(138, 43, 226, 0.1), rgba(0, 206, 209, 0.1)); 
             opacity: 0;
             transition: opacity 0.4s ease;
             z-index: 0;
@@ -301,12 +300,12 @@
         }
 
         .service-card:hover .icon {
-            transform: rotateY(180deg); /* Example icon animation */
+            transform: rotateY(180deg); 
         }
 
         .service-card h3 {
             font-size: 28px;
-            color: var(--blue-cyan); /* Changed color */
+            color: var(--blue-cyan); 
             margin-bottom: 15px;
         }
 
@@ -414,7 +413,7 @@
         .tech-logo img {
             max-width: 80%;
             max-height: 80%;
-            filter: brightness(0.8); /* Make logos slightly dim initially */
+            filter: brightness(0.8);
         }
 
         .tech-logo:hover {
@@ -446,10 +445,10 @@
             opacity: 1;
         }
 
-        /* CTA Section */
+     
         .cta-section {
             padding: 100px 0;
-            background: linear-gradient(135deg, var(--electric-purple) 0%, var(--midnight-blue) 50%, var(--blue-cyan) 100%); /* Changed color */
+            background: linear-gradient(135deg, var(--electric-purple) 0%, var(--midnight-blue) 50%, var(--blue-cyan) 100%); 
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -488,7 +487,7 @@
             padding: 18px 40px;
             font-size: 20px;
             border-radius: 8px;
-            background: linear-gradient(45deg, var(--electric-purple), var(--blue-cyan)); /* Changed color */
+            background: linear-gradient(45deg, var(--electric-purple), var(--blue-cyan)); 
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
             animation: button-pulse 1.5s infinite;
         }
@@ -499,9 +498,9 @@
             100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(138, 43, 226, 0); }
         }
 
-        /* Footer */
+     
         footer {
-            background-color: #05101E; /* Even darker blue */
+            background-color: 
             padding: 80px 0 40px;
             color: var(--text-dark);
             font-size: 15px;
@@ -516,7 +515,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('data:image/svg+xml,%3Csvg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M 0 0 L 100 100 M 100 0 L 0 100" stroke="rgba(0,206,209,0.05)" stroke-width="1"%3E%3C/path%3E%3C/svg%3E'); /* Changed color */
+            background-image: url('data:image/svg+xml,%3Csvg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M 0 0 L 100 100 M 100 0 L 0 100" stroke="rgba(0,206,209,0.05)" stroke-width="1"%3E%3C/path%3E%3C/svg%3E'); 
             background-size: 50px 50px;
             opacity: 0.5;
             z-index: 0;
@@ -538,7 +537,7 @@
 
         .footer-col h4 {
             font-size: 20px;
-            color: var(--blue-cyan); /* Changed color */
+            color: var(--blue-cyan); 
             margin-bottom: 25px;
             position: relative;
         }
@@ -574,7 +573,7 @@
         }
 
         .footer-col ul li a:hover {
-            color: var(--blue-cyan); /* Changed color */
+            color: var(--blue-cyan); 
         }
 
         .social-icons {
@@ -590,7 +589,7 @@
         }
 
         .social-icons a:hover {
-            color: var(--blue-cyan); /* Changed color */
+            color: var(--blue-cyan); 
             transform: translateY(-5px);
         }
 
@@ -704,7 +703,6 @@
 
     <section class="hero-section">
         <div class="hero-background-overlay"></div>
-        <!-- Particle.js or similar library would generate particles here -->
         <div class="hero-content">
             <h1 class="hero-title">將您的遊戲願景變為現實。</h1>
             <p class="hero-subtitle">從概念到發佈，一站式遊戲開發解決方案。</p>
@@ -720,31 +718,31 @@
             <h2 class="section-title">我們的服務</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <i class="fas fa-brain icon"></i> <!-- Placeholder icon -->
+                    <i class="fas fa-brain icon"></i>
                     <h3>遊戲策劃</h3>
                     <p>從概念到詳細設計，我們幫助您建構引人入勝的遊戲世界和玩法。</p>
                     <a href="#">瞭解更多</a>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-palette icon"></i> <!-- Placeholder icon -->
+                    <i class="fas fa-palette icon"></i> 
                     <h3>美術設計</h3>
                     <p>提供高品質的2D/3D美術、角色建模、動畫和UI/UX設計。</p>
                     <a href="#">瞭解更多</a>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-code icon"></i> <!-- Placeholder icon -->
+                    <i class="fas fa-code icon"></i> 
                     <h3>程式開發</h3>
                     <p>使用先進技術，高效穩定地實現您的遊戲功能和系統。</p>
                     <a href="#">瞭解更多</a>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-bug icon"></i> <!-- Placeholder icon -->
+                    <i class="fas fa-bug icon"></i> 
                     <h3>測試與優化</h3>
                     <p>確保遊戲品質，提供全面的測試、效能優化和技術支援。</p>
                     <a href="#">瞭解更多</a>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-rocket icon"></i> <!-- Placeholder icon -->
+                    <i class="fas fa-rocket icon"></i> 
                     <h3>發行支援</h3>
                     <p>協助遊戲上線、市場推廣和後續更新維護，助力成功發佈。</p>
                     <a href="#">瞭解更多</a>
@@ -813,7 +811,7 @@
             </div>
             <div class="footer-col">
                 <h4>聯繫方式</h4>
-                <p>信箱: info@pixelcraftstudios.com</p>
+                <p>信箱: email@cvvr.top</p>
             </div>
             <div class="footer-col">
                 <h4>關注我們</h4>
@@ -861,8 +859,8 @@
         }, observerOptions);
 
         document.querySelectorAll('.service-card').forEach(card => {
-            card.style.opacity = 0; // Hide initially
-            card.style.transform = 'translateY(50px)'; // Initial position for animation
+            card.style.opacity = 0; 
+            card.style.transform = 'translateY(50px)'; 
             observer.observe(card);
         });
 
